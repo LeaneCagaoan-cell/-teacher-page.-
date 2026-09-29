@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Teachers' Day!</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      color: #5c1d51;
+      background: linear-gradient(135deg, #fff2cc, #ffd6e7, #d9f2ff);
+    }
+
+    .card {
+      width: min(600px, 100%);
+      padding: 32px;
+      text-align: center;
+      background: white;
+      border-radius: 24px;
+      box-shadow: 0 12px 35px #27324a2b;
+    }
+
+    .photo {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 20px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border: 6px solid #ff8ad8;
+      border-radius: 50%;
+      background: #fff8e6;
+      color: #846b36;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      color: #e45b83;
+      margin-bottom: 8px;
+    }
+
+    .message {
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    button {
+      margin-top: 12px;
+      padding: 12px 20px;
+      border: 0;
+      border-radius: 999px;
+      background: #ce3462;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #c9436b;
+    }
+
+    #surprise {
+      display: none;
+      margin-top: 20px;
+      padding: 16px;
+      border-radius: 14px;
+      background: #fff2cc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <div class="photo">
+      <!-- Put your photo in this folder and replace teacher.jpg with its filename -->
+      <img src="teacher.jpg" alt="A photo of my teacher">
+    </div>
+
+    <p>🌷 A little note of appreciation 🌷</p>
+    <h1>Happy Teachers' Day!</h1>
+
+    <p class="message">
+      Thank you for sharing your knowledge, thank you for making us laugh and still accepting us despite every problem we've caused you. Your kindness and love make a
+      difference every day!
+    </p>
+
+    <button onclick="showSurprise()">Click it!</button>
+
+    <div id="surprise">
+      💛 Thank you for being an amazing teacher and mother to 1st yr BSIT 1210, SY. 2025-2026! 💛
+    </div>
+  </main>
+
+  <script>
+    function showSurprise() {
+      document.getElementById("surprise").style.display = "block";
+    }
+  </script>
+</body>
+</html>
